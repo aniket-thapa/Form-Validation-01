@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <script src="validation.js"></script>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()" autocomplete="off" action="formSubmitted.html
+    ">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+        <span id="usernameError"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span id="passwordError"></span>
+      </div>
+      <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <span id="confirmPasswordError" class="error"></span>
+      </div>
+      <input type="submit" value="Register"></button>
+    </form>
+  </body>
+</html>
